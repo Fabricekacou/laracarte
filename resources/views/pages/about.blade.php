@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layout.default', ['title' => 'about'])
 
 @section('content')
 
@@ -17,7 +17,7 @@
         </div>
 
         <p>
-            Feel free to help to improve the <a href="#">source code</a>.
+            Feel free to help to improve the <a href="https://github.com/Fabricekacou/laracarte">source code</a>.
         </p>
 
         <hr>
