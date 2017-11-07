@@ -20,7 +20,11 @@ class ContactsController extends Controller
 
         Mail::to('adminlaracarte@gmail.com')->send($mailable);
 
-        return 'Done!';
+        flashy('Nous vous repondrons dans les plus brefs délais!');
+//        flashy('You have been logged out.');
 
+       return redirect()->route('root_path');
     }
+
+
 }

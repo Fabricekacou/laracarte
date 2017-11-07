@@ -15,19 +15,19 @@
 
                     <div class="form-group has-error">
                         <label for="name" class="control-label">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" required="required">
+                        <input type="text" name="name" id="name" class="form-control" required="required" value="{{ old('name') }}">
                         {!! $errors->first('name','<span>:message</span>')  !!}
                     </div>
 
                     <div class="form-group">
                         <label for="email" class="control-label">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" required="required">
+                        <input type="email" name="email" id="email" class="form-control" required="required" value="{{ old('email') }}">
                         {!! $errors->first('email','<span>:message</span>')  !!}
                     </div>
 
                     <div class="form-group">
                         <label for="message" class="control-label sr-only">message</label>
-                        <textarea class="form-control" name="message" id="message"  rows="8"></textarea>
+                        <textarea class="form-control" name="message" id="message"  rows="8">{{ old('message') }}</textarea>
                         {!! $errors->first('message','<span>:message</span>')  !!}
                     </div>
 

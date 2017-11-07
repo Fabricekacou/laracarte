@@ -24,7 +24,7 @@ class ContactMessageCreated extends Mailable
     {
         $this->name = $name;
         $this->mail = $email;
-        $this->msg = $message;
+        $this->message = $message;
     }
 
     /**

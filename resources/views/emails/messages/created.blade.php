@@ -5,8 +5,7 @@
 - {{ $mail }}
 
 @component('mail::panel')
-    - {{ $message }}
-    This is the panel content.
+    {{ $message }}
 @endcomponent
 
 Thanks,
