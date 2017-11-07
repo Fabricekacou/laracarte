@@ -7,7 +7,7 @@
             <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1">
                 <h2>Get In Touch</h2>
                 <p class="text-muted">
-                    If you having trouble with this service, please <a href="mailto:fabricekacu@gmail.com">ask for help</a> .
+                    If you having trouble with this service, please <a href="mailto:{{ config('laracarte.admin_support_email') }}">ask for help</a> .
                 </p>
 
                 <form action="{{ route('contact_path') }}" method="post">
