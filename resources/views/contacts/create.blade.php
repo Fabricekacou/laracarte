@@ -27,12 +27,12 @@
 
                     <div class="form-group">
                         <label for="message" class="control-label sr-only">message</label>
-                        <textarea class="form-control" name="massage" id="message"  rows="8"></textarea>
+                        <textarea class="form-control" name="message" id="message"  rows="8"></textarea>
                         {!! $errors->first('message','<span>:message</span>')  !!}
                     </div>
 
                     <div class="form-group">
-                        <button class="btn btn-dark btn-block"> Submit Enquiry &raquo</button>
+                        <button class="btn btn-dark btn-block" type="submit"> Submit Enquiry &raquo</button>
 
                     </div>
                 </form>
