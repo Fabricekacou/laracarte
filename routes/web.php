@@ -18,9 +18,6 @@ Route::get('/', [
     'uses' => 'PagesController@home'
 ]);
 
-Route::get('/test-mail', function (){
-    return new ContactMessageCreated('kevan', 'fabricekacu@gmail.com', 'merci pour le super site');
-});
 
 Route::get('/about', [
     'as' => 'about_path',
